@@ -18,6 +18,30 @@ Na aba **Releases** (à direita), baixe:
 
 O guia em PDF tem os detalhes, a conferência do arquivo (SHA-256) e a tabela de problemas comuns.
 
+## Instalar com o Claude Code (opcional)
+Se você já usa o [Claude Code](https://claude.com/claude-code), ele pode fazer a cópia dos arquivos por você. Cole o texto abaixo nele:
+
+```
+Instale o motor Vulkan do Voice Studio pra minha placa AMD (Windows).
+Repositório: github.com/wallkrr777/VoiceStudio-Vulkan-AMD (aba Releases, v1.0).
+
+1. Baixe VoiceStudio-Vulkan-AMD.zip e o GUIA_INSTALACAO_VoiceStudio_Vulkan_AMD.pdf do repositório e leia o guia.
+2. Confira o SHA-256 do omnivoice-tts-windows-x86_64.exe contra o checksums.sha256 do zip. Se não bater, pare e me avise.
+3. Confirme que o Voice Studio já está instalado e foi aberto uma vez. Se não, me diga.
+4. Copie os 6 arquivos do zip (exe, 4 dlls e checksums.sha256) pras DUAS pastas:
+   %LOCALAPPDATA%\Programs\VoiceStudio\resources\bin
+   %APPDATA%\VoiceStudio\runtime\project\bin
+   Antes de copiar, feche o Voice Studio e me mostre o que vai fazer.
+5. Me diga como ativar o OmniVoice (GGUF) no app, que eu faço esse passo.
+```
+
+**Antes de aprovar qualquer comando:**
+- Leia o que o Claude Code vai rodar. Ele vai baixar e copiar um `.exe` na sua máquina; não deixe em modo automático sem conferir.
+- Peça sempre a conferência do SHA-256 (passo 2). Se o hash não bater com o da seção "Conferir o arquivo" abaixo, não instale.
+- O último passo (ativar o **OmniVoice (GGUF)** dentro do app) é pela interface do Voice Studio e você faz sozinho.
+
+Sem o Claude Code, siga o guia em PDF.
+
 ## Requisitos
 - Windows 10/11 64 bits
 - Placa AMD com driver atualizado (Vulkan)
